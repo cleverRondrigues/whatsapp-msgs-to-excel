@@ -1,3 +1,4 @@
+import pywhatkit as kit
 import pandas as pd
 #armazena as informaços das pessoas
 dados = {'nome':[],'idade':[],'numero':[]}
@@ -15,4 +16,7 @@ while True:
     print(df)
     continuar = input('vamos continuar?[s/n]\n=>')
     if continuar.lower()== 'n':
-       break
+       planilha= input('salvar as informaços em uma planilha s/n\n=>')
+       if planilha.lower()== 's':
+           df.to_excel('meu_arquivo.xlsx', index=False)
+           break
