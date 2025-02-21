@@ -34,7 +34,7 @@ pip install pywhatkit pyautogui pandas openpyxl win10toast
 No terminal, execute:
 
 ```bash
-python nome_do_arquivo.py
+python whatsapp-msgs-to-excel-main.py
 ```
 
 ### Interação com o Código
